@@ -2,14 +2,15 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import movieApi from "./services/movieApi";
+// import FetchData from "./services/FetchData";
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+<!--    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />-->
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+<!--      <HelloWorld msg="You did it!" />-->
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
@@ -17,6 +18,9 @@ import movieApi from "./services/movieApi";
         <RouterLink to="/movies">Movies</RouterLink>
       </nav>
     </div>
+<!--    <div class="wrapper">-->
+<!--      <FetchData/>-->
+<!--    </div>-->
   </header>
 
   <RouterView />
